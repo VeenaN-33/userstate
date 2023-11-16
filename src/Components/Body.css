@@ -1,0 +1,11 @@
+#whole{
+    background-image: -moz-linear-gradient(white,pink);
+}
+#txt{
+    justify-content: center;
+    align-items: center;
+    padding: 2px 250px 2px 300px ;
+}
+#info{
+    align-items: flex-start;
+}
