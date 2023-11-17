@@ -14,7 +14,7 @@ const Body = () => {
     const [anime, setAnime] = useState([
       { anime: 'demon slayer' },
       { anime: 'kaisen' },
-      { anime: 'death note' }
+      { anime: 'jujutsu' }
   ])
   const [index, setIndex] = useState(0)  // 1
   function change() {  //0+1%3
@@ -40,7 +40,7 @@ const Body = () => {
             </div>
             <div style={{ paddingTop: '50px', display: 'flex', justifyContent: 'center', alignItems: 'margin', flexDirection: 'column' }}>
                 {/* pass down url link in url attribuite */}
-                <ReactPlayer url={'https://www.youtube.com/watch?v=O8WK1iiWPN0'} height={200} width={200} controls />
+                <ReactPlayer url={'https://www.youtube.com/shorts/DVe5vtdh7i0'} height={200} width={200} controls />
                 <div>
                     <p>i like this anime </p>
                 </div>
