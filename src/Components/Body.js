@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import './Body.css'
 import Image from './vee.jpg'
 import ReactPlayer from 'react-player'
 const Body = () => {
@@ -11,14 +10,14 @@ const Body = () => {
     function reset() {
         setText('')
     }
-    const [anime, setAnime] = useState([
-      { anime: 'demon slayer' },
-      { anime: 'kaisen' },
-      { anime: 'jujutsu' }
+    const [fruits, setFruits] = useState([
+      { fruit: 'water melon' },
+      { fruit: 'apple' },
+      { fruit: 'mango' }
   ])
   const [index, setIndex] = useState(0)  // 1
   function change() {  //0+1%3
-      const newIndex = (index + 1) % anime.length
+      const newIndex = (index + 1) % fruits.length
       setIndex(newIndex)
   }
 
@@ -27,7 +26,7 @@ const Body = () => {
     return (
         <div>
             <div>
-                <img src={Image} alt="images" height={200} width={200}/> <br />
+                <img src={Image} alt="images"  height={200} width={200}/> <br />
                 <p>likes: {likes}</p>
                 {/* destructuring */}
                 <button onClick={count}>Like</button>
@@ -40,12 +39,12 @@ const Body = () => {
             </div>
             <div style={{ paddingTop: '50px', display: 'flex', justifyContent: 'center', alignItems: 'margin', flexDirection: 'column' }}>
                 {/* pass down url link in url attribuite */}
-                <ReactPlayer url={'https://www.youtube.com/shorts/DVe5vtdh7i0'} height={200} width={200} controls />
+                <ReactPlayer url={'https://www.youtube.com/watch?v=dAI21EfRv6Y'} height={200} width={200}controls />
                 <div>
-                    <p>i like this anime </p>
+                    <p>i like this </p>
                 </div>
             </div>
-            <p>i like this {anime[index].anime}</p>
+            <p>i like this {fruits[index].fruit}</p>
             <button onClick={change}>Change me</button>
         </div>
     )
