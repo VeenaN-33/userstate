@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "veena",
+      "complted": false,
+      "id": 2
+    },
+    {
+      "title": "veena",
+      "complted": false,
+      "id": 3
+    },
+    {
+      "title": "sunday",
+      "complted": false,
+      "id": 4
+    },
+    {
+      "title": "veena",
+      "complted": false,
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
